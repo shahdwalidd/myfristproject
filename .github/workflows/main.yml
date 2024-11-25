@@ -11,11 +11,6 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v3
   
-        - name: Display working directory
-          run: pwd
-        - name: printing folder contents
-          run: ls
+        - name: Login to Docker Hub
+          run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
   
-        - name: Print a message
-          run: echo "shahd"
-       
