@@ -11,9 +11,9 @@ on:
         - name: Checkout repository
           uses: actions/checkout@v3
   
-        - name: Testing GitHub action
+        - name: Display working directory
           run: pwd
   
-        - name: Testing printing
+        - name: Print a message
           run: echo "shahd"
   
